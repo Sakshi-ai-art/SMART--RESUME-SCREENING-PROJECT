@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Resume Screening</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Resume Screening</h1>
+    <p class="subtitle">Smartly compare your resume with job skills and get an instant compatibility score!</p>
+
+    <div class="form-box">
+      <label>Job Description / Required Skills (comma separated)</label>
+      <textarea id="jobSkills" rows="4" placeholder="e.g. Python, SQL, HTML, CSS, JavaScript"></textarea>
+
+      <label>Paste Resume Text</label>
+      <textarea id="resumeText" rows="6" placeholder="Paste your resume text here..."></textarea>
+
+      <button id="analyzeBtn">Analyze Resume</button>
+    </div>
+
+    <div class="result-box" id="resultBox">
+      <h2>Screening Result</h2>
+      <p><strong>Match Score:</strong> <span id="score"></span>%</p>
+      <p><strong>Matched Skills:</strong> <span id="matchedSkills"></span></p>
+      <p><strong>Missing Skills:</strong> <span id="missingSkills"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
